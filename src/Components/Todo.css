@@ -1,0 +1,121 @@
+/*  container  */
+.todo {
+  position: relative;
+  width: 340px;
+  height: 530px;
+  background-color: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+}
+
+.header {
+  width: 100%;
+  height: 140px;
+  background-image: url("./bg2.jpg");
+  background-repeat: no-repeat;
+  object-fit: contain;
+  position: absolute;
+  top: 0;
+}
+
+.header #date {
+  color: #fff;
+  position: absolute;
+  bottom: 15px;
+  left: 18px;
+}
+
+.todo-list {
+  position: absolute;
+  width: 100%;
+  top: 130px;
+  bottom: 50px;
+  background-color: #fff;
+  border-bottom: 2px solid #9d94b4;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border-radius: 10px 10px 0 0;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+ul {
+  margin-left: 10px;
+  padding: 10px;
+}
+
+/* list items */
+.item {
+  width: 98%;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: #d8d4d4;
+  border-radius: 8px;
+  padding: 0px 3px;
+  margin-bottom: 6px;
+  font-size: 20px;
+}
+
+.todo-text{
+  color: #242629;
+  margin-bottom: 4px;
+  font-weight: 700;
+}
+.completed{
+  text-decoration: line-through;
+  opacity: .8;
+}
+
+.item button {
+  position: absolute;
+  right: 6px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+
+/* input bar */
+.input-box {
+  position: absolute;
+  bottom: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.input-box input[type="text"] {
+  color: #2b2e33;
+  background-color: #d0cdcd;
+  padding: 8px 15px;
+  letter-spacing: 1.5px;
+  line-height: 15px;
+  font-size: medium;
+  font-weight: 700;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+}
+
+.input-box button {
+  background-color: #3897f0;
+  color: #f4f6fd;
+  font-weight: bold;
+  border: none;
+  border-radius: 50%;
+  font-size: x-large;
+  padding: 5px;
+  padding-top: 7px;
+  text-align: center;
+  margin-left: 10px;
+  cursor: pointer;
+  outline: none;
+}
